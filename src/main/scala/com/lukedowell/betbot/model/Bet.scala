@@ -1,4 +1,4 @@
-package com.lukedowell.betbot
+package com.lukedowell.betbot.model
 
 /**
   * A single bet placed by a user

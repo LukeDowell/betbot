@@ -1,6 +1,4 @@
-package com.lukedowell.betbot
-
-import scala.language.implicitConversions
+package com.lukedowell.betbot.model
 
 trait Command {
   def user: String
@@ -17,7 +15,10 @@ case object InvalidCommand extends Command {
 }
 
 object Command {
-  implicit def stringToCommand(s: String): Command = s match {
-    case _ => InvalidCommand
+
+  implicit class StringToCommand(s: String) {
+    def toCommand: Command = s match {
+      case _ => InvalidCommand
+    }
   }
 }

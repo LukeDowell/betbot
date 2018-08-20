@@ -1,4 +1,4 @@
-package com.lukedowell.betbot
+package com.lukedowell.betbot.model
 
 /**
   * Represents a user of betbot, someone who can place bets
